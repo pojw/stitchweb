@@ -6,19 +6,21 @@
     <title>Stitch Portfolio</title>
     <meta
       name="description"
-      content="A portfolio case study for Stitch, a mobile-first creator marketplace connecting creators and businesses through campaign discovery, matching, messaging, and payments."
+      content="A mobile-first portfolio case study for Stitch, a creator marketplace connecting creators and businesses through campaign discovery, matching, messaging, and payments."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header">
       <nav class="nav-shell" aria-label="Project sections">
-        <div class="nav-group">
+        <div class="nav-group" aria-label="Project description navigation">
           <a href="#description">Description</a>
-          <a href="#problem">Problem Statement</a>
+          <a href="#problem-statement">Problem Statement</a>
         </div>
-        <a class="brand" href="#top" aria-label="Stitch portfolio home">Stitch</a>
-        <div class="nav-group">
+        <a class="brand" href="#top" aria-label="Stitch home">
+          <span>Stitch</span>
+        </a>
+        <div class="nav-group" aria-label="Project results navigation">
           <a href="#process">Process</a>
           <a href="#full-results">Full Results</a>
         </div>
@@ -26,186 +28,221 @@
     </header>
 
     <main id="top">
-      <section class="overview">
-        <div class="overview-copy">
-          <p class="eyebrow">Creator-brand collaborations</p>
-          <h1>Project Overview</h1>
-          <p class="lead">
-            Stitch is a mobile-first creator marketplace built to help creators
-            find paid campaigns and help businesses discover better-fit partners
-            through a simple swipe, match, and chat workflow.
+      <section class="hero section-block">
+        <h1>Project Overview</h1>
+        <div class="content-card overview-card">
+          <p>
+            Stitch is a personal mobile app project documenting how I planned,
+            built, and prepared a creator marketplace where businesses and
+            creators can discover each other through a simple swipe, match, and
+            chat experience.
+          </p>
+
+          <div class="project-preview" aria-label="Stitch mobile app preview">
+            <div class="preview-heading">
+              <p>Project app preview</p>
+              <h2>Mobile creator marketplace flow</h2>
+            </div>
+
+            <div class="preview-device">
+              <article class="phone-screen" aria-label="Stitch campaign preview">
+                <div class="phone-top">
+                  <span>9:41</span>
+                  <span>Stitch</span>
+                  <span>5G</span>
+                </div>
+
+                <section class="app-card campaign">
+                  <p>Campaign</p>
+                  <h3>Local product launch</h3>
+                  <span>$450 budget</span>
+                </section>
+
+                <section class="app-card creator">
+                  <div class="avatar">JH</div>
+                  <div>
+                    <p>Creator match</p>
+                    <h3>Lifestyle creator</h3>
+                    <span>12.4k followers</span>
+                  </div>
+                </section>
+
+                <div class="swipe-actions" aria-label="Swipe action preview">
+                  <span>No</span>
+                  <strong>Match</strong>
+                  <span>Save</span>
+                </div>
+              </article>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section-block" id="description">
+        <h2>Description</h2>
+        <div class="content-card">
+          <p>
+            Stitch is a mobile app project focused on creator-brand
+            collaboration. Creators can build a profile, show their work, add
+            social accounts, set compensation expectations, browse campaigns,
+            and swipe on opportunities they want to explore.
+          </p>
+          <p>
+            Businesses can create a profile, post campaigns with images and
+            budget details, discover creators, and start conversations after a
+            mutual match. The project combines product design, mobile
+            engineering, marketplace thinking, release prep, and payment
+            workflow planning.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-block" id="problem-statement">
+        <h2>Problem Statement</h2>
+        <div class="content-card">
+          <p>
+            Businesses need creators who fit their campaigns, but the process
+            can become scattered across cold messages, social profiles,
+            screenshots, and long conversations before either side knows whether
+            the collaboration makes sense.
+          </p>
+          <p>
+            Creators face the same problem from the other side. Good
+            opportunities are hard to find, compare, and manage in one place.
+            Stitch solves that by turning discovery into a simple swipe flow,
+            then moving mutual interest into messaging.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-block" id="process">
+        <h2>Process</h2>
+        <div class="content-card process-card">
+          <div class="steps">
+            <div>
+              <span>1</span>
+              <p>
+                Defined the two-sided marketplace model around creators,
+                businesses, profiles, campaigns, discovery, and messaging.
+              </p>
+            </div>
+            <div>
+              <span>2</span>
+              <p>
+                Built mobile onboarding and account flows so each user type
+                could enter the app with the right profile data and permissions.
+              </p>
+            </div>
+            <div>
+              <span>3</span>
+              <p>
+                Designed campaign creation and editing with images, budgets,
+                dates, descriptions, and business context.
+              </p>
+            </div>
+            <div>
+              <span>4</span>
+              <p>
+                Connected swipe discovery, mutual matching, and chat so creators
+                and businesses could move from browsing to conversation.
+              </p>
+            </div>
+            <div>
+              <span>5</span>
+              <p>
+                Added product readiness work around content reporting, account
+                deletion, subscriptions, Stripe marketplace payments, and app
+                store release requirements.
+              </p>
+            </div>
+          </div>
+
+          <div class="flow-card">
+            <p>Mobile flow</p>
+            <div class="flow-controls" aria-label="Stitch mobile flow categories">
+              <button type="button">Creator</button>
+              <button type="button">Business</button>
+            </div>
+            <div class="flow-slide">
+              <span>1 / 4</span>
+              <h3>Swipe into a campaign</h3>
+              <p>
+                Creators browse campaign cards, review brand details, and signal
+                interest without starting from a blank outreach message.
+              </p>
+            </div>
+            <div class="flow-nav" aria-label="Preview navigation">
+              <button type="button">Previous</button>
+              <button type="button">Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-block" id="full-results">
+        <h2>Full Results</h2>
+        <div class="content-card">
+          <p>
+            The strongest result is a creator marketplace product with real
+            mobile release momentum. Stitch is structured around practical
+            collaboration workflows: creators can present themselves and
+            discover campaigns, businesses can publish opportunities and review
+            creators, and both sides can match, chat, and move toward paid work.
           </p>
         </div>
 
-        <div class="phone-stage" aria-label="Stitch app preview">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <article class="phone-frame">
-            <div class="phone-status">
-              <span>9:41</span>
-              <span>5G</span>
-            </div>
-            <div class="phone-card campaign-card">
-              <p>Campaign</p>
-              <h2>Local product launch</h2>
-              <span>$450 budget</span>
-            </div>
-            <div class="match-row">
-              <span>Swipe</span>
-              <span>Match</span>
-              <span>Chat</span>
-            </div>
-            <div class="profile-stack">
-              <div>
-                <strong>Lifestyle creator</strong>
-                <span>12.4k followers</span>
-              </div>
-              <button aria-label="Like campaign">+</button>
-            </div>
+        <div class="result-list">
+          <article>
+            <span>Title</span>
+            <strong>Stitch Marketplace</strong>
+          </article>
+          <article>
+            <span>Platform</span>
+            <strong>React Native and Expo mobile app</strong>
+          </article>
+          <article>
+            <span>Core flow</span>
+            <strong>Swipe, match, chat</strong>
+          </article>
+          <article>
+            <span>State</span>
+            <strong>iOS approved, Android release prep underway</strong>
           </article>
         </div>
       </section>
 
-      <section class="showcase-band">
-        <div>
-          <p class="eyebrow">Live product foundation</p>
-          <h2>Creator and business flows in one marketplace</h2>
-        </div>
-        <p>
-          The project brings together profile creation, campaign posting,
-          campaign discovery, mutual matching, messaging, reporting, account
-          controls, subscription work, and Stripe marketplace payments inside a
-          React Native and Expo app.
-        </p>
-      </section>
-
-      <section class="content-section" id="description">
-        <h2>Description</h2>
-        <p>
-          Stitch is a personal mobile app project focused on creator-brand
-          collaboration. Creators can build a profile, show their work, add
-          social accounts, set compensation expectations, browse campaigns, and
-          swipe on opportunities they want to explore. Businesses can create a
-          profile, post campaigns with images and budget details, discover
-          creators, and start conversations after a mutual match.
-        </p>
-        <p>
-          The portfolio version presents Stitch as both a product and a build
-          story: a marketplace interface, a two-sided user model, mobile-first
-          onboarding, protected account flows, and release work that has already
-          reached iOS App Store approval.
-        </p>
-      </section>
-
-      <section class="content-section" id="problem">
-        <h2>Problem Statement</h2>
-        <p>
-          Small businesses often need creator partnerships, but finding the right
-          person can turn into scattered outreach, uncertain fit, and long
-          message threads before either side knows whether a collaboration makes
-          sense. Creators face the same friction from the other direction: useful
-          campaign opportunities are difficult to find, compare, and manage in
-          one place.
-        </p>
-        <p>
-          Stitch tackles that problem by making discovery feel familiar and
-          lightweight. A swipe-based flow helps both sides signal interest
-          quickly, while matching and messaging give them a clearer path from
-          first impression to collaboration details.
-        </p>
-      </section>
-
-      <section class="content-section process-section" id="process">
-        <h2>Process</h2>
-        <div class="steps">
-          <article>
-            <span>1</span>
-            <p>
-              Defined the two-sided marketplace model around creators,
-              businesses, profiles, campaigns, discovery, and messaging.
-            </p>
-          </article>
-          <article>
-            <span>2</span>
-            <p>
-              Built mobile onboarding and account flows so each user type could
-              enter the app with the right profile data and permissions.
-            </p>
-          </article>
-          <article>
-            <span>3</span>
-            <p>
-              Designed campaign creation and editing with images, budgets,
-              dates, descriptions, and business context.
-            </p>
-          </article>
-          <article>
-            <span>4</span>
-            <p>
-              Connected swipe discovery, mutual matching, and chat so creators
-              and businesses could move from browsing to conversation.
-            </p>
-          </article>
-          <article>
-            <span>5</span>
-            <p>
-              Added product readiness work around content reporting, account
-              deletion, subscriptions, Stripe marketplace payments, and app
-              store release requirements.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="content-section results-section" id="full-results">
-        <h2>Full Results</h2>
-        <p>
-          The strongest result is a working creator marketplace product with
-          real mobile release momentum. Stitch is structured around practical
-          collaboration workflows: creators can present themselves and discover
-          campaigns, businesses can publish opportunities and review creators,
-          and both sides can match, chat, and move toward paid work.
-        </p>
-
-        <div class="result-grid">
-          <article>
-            <p class="label">Title</p>
-            <h3>Stitch Marketplace</h3>
-          </article>
-          <article>
-            <p class="label">Platform</p>
-            <h3>iOS, iPadOS, Android-ready Expo app</h3>
-          </article>
-          <article>
-            <p class="label">Core flow</p>
-            <h3>Swipe, match, chat</h3>
-          </article>
-          <article>
-            <p class="label">State</p>
-            <h3>iOS approved, Android release prep underway</h3>
-          </article>
-        </div>
-      </section>
-
-      <section class="content-section skills-section" id="build">
+      <section class="section-block" id="technical-skills">
         <h2>Technical Skills</h2>
-        <p>
-          Built with React Native, Expo, EAS, TypeScript, mobile authentication,
-          image upload workflows, role-based onboarding, creator and business
-          profile systems, campaign management, swipe and match interactions,
-          messaging, reporting, account deletion, subscription work, Stripe
-          marketplace payments, app store release preparation, and responsive
-          product design.
-        </p>
+        <div class="content-card">
+          <p>
+            Built with React Native, Expo, EAS, TypeScript, mobile
+            authentication, image upload workflows, role-based onboarding,
+            creator and business profiles, campaign management, swipe and match
+            interactions, messaging, reporting, account deletion, subscription
+            work, Stripe marketplace payments, app store release preparation,
+            and mobile-first product design.
+          </p>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>
-        Stitch case study for Jaylin Hernandez. Built to document the product,
-        process, and technical decisions behind the creator marketplace.
-      </p>
-      <a href="#top">Back to top</a>
+    <footer class="site-footer">
+      <div>
+        <strong>Stitch</strong>
+        <p>
+          Personal project case study by Jaylin Hernandez, documenting the
+          product thinking, mobile build, and release work behind the creator
+          marketplace.
+        </p>
+      </div>
+      <nav aria-label="Footer links">
+        <a href="#top">Home</a>
+        <a href="#description">Description</a>
+        <a href="#problem-statement">Problem</a>
+        <a href="#process">Process</a>
+        <a href="#full-results">Results</a>
+      </nav>
     </footer>
   </body>
 </html>
