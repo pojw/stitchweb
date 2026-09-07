@@ -52,23 +52,24 @@ button {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
-  column-gap: 1.35rem;
-  width: min(760px, calc(100% - 32px));
-  min-height: 78px;
+  column-gap: 1.5rem;
+  width: min(920px, calc(100% - 32px));
+  min-height: 72px;
   margin: 0 auto;
 }
 
 .nav-group {
   display: flex;
   align-items: center;
-  gap: 1.15rem;
+  min-width: 0;
+  gap: 1.35rem;
 }
 
-.nav-group:first-child {
+.nav-group-left {
   justify-content: flex-end;
 }
 
-.nav-group:last-child {
+.nav-group-right {
   justify-content: flex-start;
 }
 
@@ -79,6 +80,7 @@ button {
 }
 
 .brand {
+  justify-self: center;
   color: var(--green);
   font-size: clamp(1.95rem, 3.4vw, 2.35rem);
   font-weight: 700;
@@ -526,26 +528,28 @@ h1 {
 
 @media (max-width: 760px) {
   .nav-shell {
-    display: flex;
     flex-direction: column;
-    gap: 0.55rem;
+    gap: 1.1rem;
     min-height: auto;
-    padding: 0.8rem 0;
-  }
-
-  .brand {
-    order: -1;
+    padding: 0.9rem 0;
   }
 
   .nav-group {
+    width: 100%;
+    padding: 0;
     justify-content: center;
-    gap: 0.9rem;
+    flex-wrap: wrap;
+    gap: 0.85rem;
   }
 
   .nav-group a {
     color: var(--green);
     font-size: 1rem;
     font-weight: 400;
+  }
+
+  .brand {
+    justify-self: auto;
   }
 
   .hero {
@@ -590,10 +594,10 @@ h1 {
 
   .nav-group {
     width: 100%;
+    justify-content: space-between;
   }
 
   .nav-group a {
-    flex: 1;
     text-align: center;
   }
 
